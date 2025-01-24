@@ -1,3 +1,6 @@
+let userHealth = 5;
+let userScore = 0;
+
 document.querySelector('#oneBtn').addEventListener('click', ()=>{
   selectChoice("one")
   })
