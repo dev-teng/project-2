@@ -1,4 +1,4 @@
-let userHealth = 5;
+let userHealth = 10;
 let userScore = 0;
 
 document.querySelector('#oneBtn').addEventListener('click', ()=>{
@@ -24,8 +24,22 @@ function selectChoice (choice) {
     userHealth--
     alert('You are out of luck');
   }
+  updateScore();
+
+  if(userScore === 5) {
+    alert('Congratulations you win!');
+  }else if (userHealth === 0) {
+    alert('Better luck next time!');
+  }
 
 }
+
+function updateScore() {
+  document.querySelector('#userHealth').innerHTML = userHealth;
+  document.querySelector('#userScore').innerHTML = userScore;
+
+}
+
 
 function makeRandomNumber() {
   const random = ['one','two','three','four'];
