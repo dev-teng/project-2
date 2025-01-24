@@ -27,9 +27,11 @@ function selectChoice (choice) {
   updateScore();
 
   if(userScore === 5) {
-    alert('Congratulations you win!');
+    const winnerModal = new bootstrap.Modal(document.getElementById('winnerModal'))
+    winnerModal.show();
   }else if (userHealth === 0) {
-    alert('Better luck next time!');
+    const losserModal = new bootstrap.Modal(document.getElementById('losserModal'))
+    losserModal.show();
   }
 
 }
