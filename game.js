@@ -17,6 +17,14 @@ document.querySelector('#fourBtn').addEventListener('click', ()=>{
 function selectChoice (choice) {
   alert(choice);
   const randomNumber = makeRandomNumber();
+  if(choice === randomNumber){
+    alert('Your guess is correct!')
+    userScore++
+  }else {
+    userHealth--
+    alert('You are out of luck');
+  }
+
 }
 
 function makeRandomNumber() {
