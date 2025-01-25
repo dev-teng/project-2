@@ -1,0 +1,12 @@
+.title {
+  animation: my_color_change 5s running infinite linear;
+}
+
+@keyframes my_color_change {
+  20% {background-color: lightblue;}
+  40% {background-color: lightcoral;}
+  60% {background-color: lightgreen;}
+  80% {background-color: lightpink;}
+  100% {background-color: lightsteelblue;}
+
+}
